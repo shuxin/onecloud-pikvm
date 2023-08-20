@@ -1,3 +1,22 @@
+# OneCloud PiKVM
+
+## Prepare
+
+- step1. install [Armbian_OneCloud_jammy.img.xz](https://github.com/hzyitc/armbian-onecloud/releases/download/ci-20230706-173248-UTC/Armbian_23.08.0-trunk_Onecloud_jammy_edge_6.4.2.burn.img.xz) by @[hzyitc](https://github.com/hzyitc/armbian-onecloud)
+- step2. install ```sudo apt install -y nginx tesseract-ocr tesseract-ocr-eng janus libevent-dev libgpiod-dev```
+- step3. install [fruity-PiKVM_armhf.deb](https://github.com/jacobbar/fruity-pikvm/releases/download/debfile/fruity-pikvm_0.2_armhf.deb) by @[jacobbar](https://github.com/jacobbar/fruity-pikvm)
+- step4. modify ```/usr/bin/kvmd-fix``` append ```echo device > /sys/class/usb_role/c9040000.usb-role-switch/role```
+
+## How to use
+
+Now, you got a PiKVM only price with 6$(RMB 40￥): OneCloud(3$/20￥)+MS2019(3$/20￥)
+
+- step1. Plug ```USB MS2019``` in the usb port ```next``` to the enternet port, and then use hdmi cable connect to your target machine.
+- step2. Plug ```USB Dual Male Cable``` in the usb-otg port ```away``` from the enternet port, and then connect to your target machine.
+- step3. boot the OneCloud and enjoy :)
+
+WARNING: OTG on OneCloud not support hot plug!!!
+
 # Fruity PiKVM
 
 This is an experimental script in an attempt to port PiKVM installation to other SBCs such as OrangePi, BananaPi, MangoPi etc..
