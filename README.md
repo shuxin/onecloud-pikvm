@@ -15,7 +15,7 @@ Now, you got a PiKVM only price with 6$(RMB 40￥): OneCloud(3$/20￥)+MS2019(3$
 - step2. Plug ```USB Dual Male Cable``` in the usb-otg port ```away``` from the enternet port, and then connect to your target machine.
 - step3. boot the OneCloud and enjoy :)
 
-WARNING: OTG on OneCloud not support hot plug!!!
+WARNING: OTG on OneCloud not support hot plug!!! you can ```echo host > /sys/class/usb_role/c9040000.usb-role-switch/role``` before target reboot
 
 # Fruity PiKVM
 
